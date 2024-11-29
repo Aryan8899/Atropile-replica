@@ -1,0 +1,82 @@
+.scrollbar-hidden {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+}
+
+.scrollbar-hidden::-webkit-scrollbar {
+  display: none; /* WebKit */
+}
+
+.container {
+  overflow: hidden;
+  padding-top: 64px;
+}
+
+.sidebar {
+  -webkit-overflow-scrolling: touch;
+}
+
+.sidebar {
+  background-color: transparent; /* Purple background */
+  overflow-y: auto;
+  transition: transform 0.3s ease-in-out;
+}
+
+body {
+  background-color: #1e1e1e; /* Dark gray background */
+  color: #f0f0f0; /* Light gray text color */
+}
+
+
+html {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+}
+
+html::-webkit-scrollbar {
+  display: none; /* WebKit */
+}
+
+.sidebar {
+  -webkit-overflow-scrolling: touch;
+}
+
+
+body, html {
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+  max-width: 100%;
+}
+
+.sidebar {
+  position: fixed; /* Add this */
+  top: 0; /* Add this */
+  left: 0; /* Add this */
+  height: 100vh; /* Keep this */
+  overflow-y: auto; /* Keep this */
+  transition: transform 0.3s ease-in-out; /* Keep this */
+}
+
+
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  max-width: 100%;
+}
+
+html, body {
+  overflow-x: hidden;
+  max-width: 100%;
+  overscroll-behavior-x: none;
+}
+
+#root {
+  overflow-x: hidden;
+  max-width: 100%;
+}
+
+body {
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
