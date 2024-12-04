@@ -5,7 +5,7 @@ import App from "./App.tsx";
 import { createWeb3Modal, defaultConfig } from "@web3modal/ethers5/react";
 
 // 1. Your WalletConnect Cloud project ID
-const projectId = "224382cc5c46b1c10cdecbd4059dff6e";
+const projectId = "cfbff28144e76635be4f2d72ad72c548";
 
 // 2. Set chains (use BSC Testnet here)
 const testnet = {
@@ -26,11 +26,10 @@ const metadata = {
 // 4. Create Ethers config
 const ethersConfig = defaultConfig({
   metadata,
-  enableEIP6963: true, // true by default
-  enableInjected: true, // true by default
-  enableCoinbase: true, // true by default
-  rpcUrl: "...", // used for the Coinbase SDK (optional)
-  defaultChainId: 97, // Default to BSC Testnet
+  defaultChainId: 97,
+  enableEIP6963: true,
+  enableInjected: true,
+  enableCoinbase: true
 });
 
 console.log("Ethers Config:", ethersConfig);
@@ -39,12 +38,14 @@ console.log("Testnet configuration:", testnet);
 try {
   console.log('Creating Web3Modal instance...');
   // 5. Create a Web3Modal instance
-  createWeb3Modal({
-    ethersConfig,
-    chains: [testnet], // Include BSC Testnet
-    projectId,
-    enableAnalytics: true, // Optional - defaults to your Cloud configuration
-  });
+  // Modify your Web3Modal creation
+createWeb3Modal({
+  ethersConfig, 
+  chains: [testnet], 
+  projectId, 
+  enableAnalytics: true,
+  
+});
 
   console.log('Web3Modal instance created successfully');
 } catch (error) {

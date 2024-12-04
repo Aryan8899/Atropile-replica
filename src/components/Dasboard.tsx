@@ -1,42 +1,58 @@
 import React from "react";
 import pic1 from "../photos/pic1.png";
+import { useEffect } from "react";
+import { useWeb3ModalState } from "@web3modal/ethers5/react";
 import { useWeb3Modal } from "@web3modal/ethers5/react";
-
+import { useCallback } from "react";
 
 const Dashboard = () => {
-  // Inside your button click handler
-const handleConnect = async () => {
- 
-    open(); // This will open the Web3Modal for wallet connection
+  const { open, close } = useWeb3Modal();
+  const { open: isModalOpen } = useWeb3ModalState();
 
-};
+  const handleConnect = useCallback(async () => {
+    try {
+      console.log("Attempting to open modal...");
 
-  const { open } = useWeb3Modal();
+      // Use open() method directly without await
+      open();
+
+      console.log("Modal should be opening");
+    } catch (error) {
+      console.error("Modal Open Error:", error);
+    }
+  }, [open]);
 
   return (
-    <div className=" min-h-screen bg-blue-950 text-white space-y-4">
+    <div className=" min-h-screen  text-white space-y-4">
       {/* Header */}
-      <header className="flex flex-col items-center px-4 py-6 bg-blue-950 shadow-md relative">
-        <img
-          src="https://atropine.io/static/media/logo.33181fc782c8863920c5.png"
-          alt="Logo"
-          className="h-10 w-auto mb-2 sm:h-16"
-        />
-        <h2 className="text-center text-lg md:text-lg px-2">
-          Fully Decentralized Layered Yield Farm on IPFS & Pulsechain
-        </h2>
-        <button
-          onClick={handleConnect}
-          className="absolute top-4 right-4 bg-green-500 hover:bg-green-600 text-white px-3 py-2 rounded-lg sm:top-6 sm:right-6 sm:px-4 sm:py-2"
-        >
-          Connect
-        </button>
-      </header>
+      <div className="rotating-background"></div>
+
+      <header className="flex flex-col items-center px-4 py-6 shadow-md relative">
+  <h2 className="font-[Dela_Gothic_One], sans-serif text-[40px] sm:text-[50px] outline-text font-normal tracking-normal leading-[1.2em] text-white text-start no-underline flex items-center">
+    <span className="mr-4">SuiTrump</span>
+    <img
+      src="https://framerusercontent.com/images/PX7OJIh09S4xt8yZNa9dVpjGoE.png"
+      alt="trump"
+      className="w-[80px] sm:w-[100px] h-[80px] sm:h-[100px]"
+    />
+  </h2>
+
+  {/* Connect Button - Mobile Specific Styles */}
+  <button
+    onClick={handleConnect}
+    className="absolute top-2 right-2 bg-green-500 hover:bg-green-600 text-white px-3 py-1 rounded-lg text-sm sm:text-base sm:px-4 sm:py-2 sm:top-6 sm:right-6"
+  >
+    Connect
+  </button>
+</header>
+
+
+
 
       {/* Main Content */}
       <div className="container mx-auto px-4 py-6 grid grid-cols-1 md:grid-cols-2 gap-6">
         {/* Farming & Staking Section */}
-        <div className="bg-[#280046e0] p-6 rounded-xl shadow-lg text-center flex flex-col justify-between border border-green-400">
+        <div className="bg-[#280046e0] p-6 rounded-xl shadow-lg text-center flex flex-col justify-between border border-green-400 h-full">
           <div className="grid grid-cols-1 sm:grid-cols-2 items-center gap-4">
             {/* Left Side - Text Content */}
             <div className="text-left px-2">
@@ -63,15 +79,23 @@ const handleConnect = async () => {
             </div>
 
             {/* Right Side - Logo */}
-            <div className="relative">
-              <div className="bg-[#280046e0] rounded-full p-10 mx-auto flex items-center justify-center w-[200px] h-[200px] border border-green-400">
-                <img
-                  src={pic1}
-                  alt="Farming Logo"
-                  className="object-contain w-full h-full"
-                />
-              </div>
-            </div>
+            {/* Right Side - Logo */}
+            {/* Right Side - Logo */}
+            <div
+  className="relative bg-cover bg-center w-[110%] h-full" // Increased width to 110%
+  style={{
+    backgroundImage: `url('https://framerusercontent.com/images/PX7OJIh09S4xt8yZNa9dVpjGoE.png')`,
+    backgroundSize: "cover",
+    backgroundRepeat: "no-repeat",
+    backgroundPosition: "center",
+    minHeight: "450px",
+    height: "110%", // Kept height at 110%
+  }}
+>
+  <div className="bg-[#280046e0] bg-opacity-80 p-10 mx-auto flex items-center justify-center w-full h-full">
+    {/* Content can be added here if needed */}
+  </div>
+</div>
           </div>
         </div>
 

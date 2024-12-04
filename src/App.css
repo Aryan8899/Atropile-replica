@@ -1,11 +1,17 @@
-.scrollbar-hidden {
-  scrollbar-width: none; /* Firefox */
-  -ms-overflow-style: none; /* Internet Explorer 10+ */
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.hide-scrollbar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none;    /* Firefox */
 }
 
-.scrollbar-hidden::-webkit-scrollbar {
-  display: none; /* WebKit */
+@media (min-width: 1024px) { /* Target desktop sizes */
+  .hide-scrollbar {
+    overflow: auto; /* Enable scrolling without a visible scrollbar */
+  }
 }
+
 
 .container {
   overflow: hidden;
@@ -79,4 +85,46 @@ body {
   position: relative;
   margin: 0;
   padding: 0;
+}
+
+
+.rotating-background {
+  position: fixed; /* Stays in place */
+  top: 0;
+  left: 0;
+  width: 100vw; /* Full width */
+  height: 100vh; /* Full height */
+  background: radial-gradient(circle, #1d4e92, #2764af);
+  transform: rotate(0deg); /* Initial state */
+  animation: rotateBG 30s linear infinite; /* Smooth infinite rotation */
+  z-index: -1; /* Places it behind other content */
+}
+
+@keyframes rotateBG {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.framer-text {
+  -webkit-text-stroke-width: 0px;
+  -webkit-text-stroke-color: initial;
+}
+
+
+.geo{
+  font-feature-settings: normal; 
+  -webkit-text-stroke: 1px black;
+}
+
+
+.outline-text {
+  text-shadow: 
+    -2px -2px 0 #000,  /* left and top shadow */
+    2px -2px 0 #000,   /* right and top shadow */
+    -2px 2px 0 #000,   /* left and bottom shadow */
+    2px 2px 0 #000;    /* right and bottom shadow */
 }

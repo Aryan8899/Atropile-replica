@@ -40,27 +40,33 @@ const Sidebar = () => {
       {/* Sidebar */}
       <div
       
-      className={`fixed top-0 left-0 w-64 h-screen bg-purple-900 text-white flex flex-col py-4 px-4 border-r-4 border-green-500 z-40 
+      className={`fixed top-0 left-0 w-64 h-screen bg-gradient-to-b from-cyan-200  to-cyan-950 text-black flex flex-col py-4 px-4 border-r-4 border-green-500 z-40 
         transition-transform duration-300 
         ${isSidebarOpen ? "translate-x-0" : "-translate-x-full"} 
-        lg:translate-x-0 lg:static overflow-y-auto overscroll-contain`}
+        lg:translate-x-0 lg:static overflow-y-auto `}
       
       
       >
         {/* Logo Section */}
-        <div className="flex items-center justify-center mb-10">
-          <img
-            src="https://atropine.io/static/media/logo.33181fc782c8863920c5.png"
-            alt="Logo"
-            className="h-12"
-          />
-        </div>
+        <div className="flex items-center justify-center mb-5 mt-2 ml-5 ">
+  <img
+    src="https://framerusercontent.com/images/PX7OJIh09S4xt8yZNa9dVpjGoE.png"
+    alt="trump"
+    className="w-[50px] h-[50px] mr-2"
+  />
+  <h2 className="font-[Dela_Gothic_One], sans-serif text-[30px] outline-text font-normal tracking-normal leading-[1.2em] text-white text-start no-underline">
+    <span>SuiTrump</span>
+  </h2>
+</div>
+
+
+
 
         {/* Navigation Links */}
         <nav className="space-y-2">
           <a
             href="/"
-            className="flex items-center space-x-3 px-4 py-2 text-lg bg-purple-800 rounded hover:bg-purple-700 transition duration-300"
+            className="flex items-center space-x-3 px-4 py-2 text-lg bg-cyan-100 rounded-lg hover:bg-slate-400 transition duration-300"
           >
             <FaHome />
             <span>Home</span>
@@ -70,7 +76,7 @@ const Sidebar = () => {
           <div>
             <button
               onClick={() => setTradeOpen(!tradeOpen)}
-              className="flex items-center justify-between w-full px-4 py-2 text-lg bg-purple-800 rounded hover:bg-purple-700 transition duration-300"
+              className="flex items-center justify-between w-full px-4 py-2 text-lg bg-cyan-100 rounded-lg hover:bg-slate-400 transition duration-300"
             >
               <div className="flex items-center space-x-3">
                 <FaExchangeAlt />
@@ -79,7 +85,7 @@ const Sidebar = () => {
               <span>{tradeOpen ? "▲" : "▼"}</span>
             </button>
             {tradeOpen && (
-              <ul className="mt-1 space-y-1 bg-purple-700 rounded px-4 py-2">
+              <ul className="mt-1 space-y-1 bg-cyan-100 rounded px-4 py-2">
                 <li>
                   <a
                     href="https://pulsex.mypinata.cloud/ipfs/bafybeiesh56oijasgr7creubue6xt5anivxifrwd5a5argiz4orbed57qi/#/?outputCurrency=0xE846884430D527168B4EAaC80Af9268515D2f0CC"
@@ -108,7 +114,7 @@ const Sidebar = () => {
           <div>
             <button
               onClick={() => setFarmOpen(!farmOpen)}
-              className="flex items-center justify-between w-full px-4 py-2 text-lg bg-purple-800 rounded hover:bg-purple-700 transition duration-300"
+              className="flex items-center justify-between w-full px-4 py-2 text-lg bg-cyan-100 rounded-lg hover:bg-slate-400 transition duration-300"
             >
               <div className="flex items-center space-x-3">
                 <FaTractor />
@@ -117,7 +123,7 @@ const Sidebar = () => {
               <span>{farmOpen ? "▲" : "▼"}</span>
             </button>
             {farmOpen && (
-              <ul className="mt-1 space-y-1 bg-purple-700 rounded px-4 py-2">
+              <ul className="mt-1 space-y-1 bg-cyan-100 rounded px-4 py-2">
                 <li>
                   <a href="#" className="block hover:text-green-400">
                     Farms
@@ -131,7 +137,7 @@ const Sidebar = () => {
           <div>
             <button
               onClick={() => setInfoOpen(!infoOpen)}
-              className="flex items-center justify-between w-full px-4 py-2 text-lg bg-purple-800 rounded hover:bg-purple-700 transition duration-300"
+              className="flex items-center justify-between w-full px-4 py-2 text-lg bg-cyan-100 rounded-lg hover:bg-slate-400 transition duration-300"
             >
               <div className="flex items-center space-x-3">
                 <FaInfoCircle />
@@ -140,7 +146,7 @@ const Sidebar = () => {
               <span>{infoOpen ? "▲" : "▼"}</span>
             </button>
             {infoOpen && (
-              <ul className="mt-1 space-y-1 bg-purple-700 rounded px-4 py-2">
+              <ul className="mt-1 space-y-1 bg-cyan-100 rounded px-4 py-2">
                 <li>
                   <a
                     href="https://pulsex.mypinata.cloud/ipfs/bafybeiesh56oijasgr7creubue6xt5anivxifrwd5a5argiz4orbed57qi/#/info/token/0xe846884430d527168b4eaac80af9268515d2f0cc"
@@ -169,7 +175,7 @@ const Sidebar = () => {
           <div>
             <button
               onClick={() => setMoreOpen(!moreOpen)}
-              className="flex items-center justify-between w-full px-4 py-2 text-lg bg-purple-800 rounded hover:bg-purple-700 transition duration-300"
+              className="flex items-center justify-between w-full px-4 py-2 text-lg bg-cyan-100 rounded-lg hover:bg-slate-400 transition duration-300"
             >
               <div className="flex items-center space-x-3">
                 <FaEllipsisH />
@@ -178,7 +184,7 @@ const Sidebar = () => {
               <span>{moreOpen ? "▲" : "▼"}</span>
             </button>
             {moreOpen && (
-              <ul className="mt-1 space-y-1 bg-purple-700 rounded px-4 py-2">
+              <ul className="mt-1 space-y-1 bg-cyan-100 rounded px-4 py-2">
                 <li>
                   <a
                     href="https://atropine.gitbook.io/atropine"
