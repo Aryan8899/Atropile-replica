@@ -40,7 +40,7 @@ const Dashboard = () => {
   {/* Connect Button - Mobile Specific Styles */}
   <button
     onClick={handleConnect}
-    className="absolute top-2 right-2 bg-green-500 hover:bg-green-600 text-white px-3 py-1 rounded-lg text-sm sm:text-base sm:px-4 sm:py-2 sm:top-6 sm:right-6"
+    className="absolute top-2 right-2 bg-blue-400 hover:bg-green-600 text-white px-3 py-1 rounded-lg text-sm sm:text-base sm:px-4 sm:py-2 sm:top-6 sm:right-6"
   >
     Connect
   </button>
@@ -52,11 +52,11 @@ const Dashboard = () => {
       {/* Main Content */}
       <div className="container mx-auto px-4 py-6 grid grid-cols-1 md:grid-cols-2 gap-6">
         {/* Farming & Staking Section */}
-        <div className="bg-[#280046e0] p-6 rounded-xl shadow-lg text-center flex flex-col justify-between border border-green-400 h-full">
+        <div className="bg-blue-950 p-6 rounded-xl shadow-lg text-center flex flex-col justify-between border border-green-400 h-full">
           <div className="grid grid-cols-1 sm:grid-cols-2 items-center gap-4">
             {/* Left Side - Text Content */}
             <div className="text-left px-2">
-              <h2 className="text-3xl font-bold tracking-wider uppercase text-green-400 mb-4">
+              <h2 className="text-3xl font-bold tracking-wider uppercase text-blue-300 mb-4">
                 Farming & Staking
               </h2>
               <p className="text-lg font-medium text-white mb-1">
@@ -73,7 +73,7 @@ const Dashboard = () => {
               <h3 className="text-4xl font-bold text-white">0.000</h3>
               <p className="text-sm text-gray-400">~$0.00</p>
 
-              <button className="bg-green-500 hover:bg-green-600 text-white px-4 py-2 md:px-8 md:py-3 mt-6 md:mt-8 rounded-md font-semibold transition-all w-full sm:w-auto">
+              <button className="bg-blue-500 hover:bg-green-600 text-white px-4 py-2 md:px-8 md:py-3 mt-6 md:mt-8 rounded-md font-semibold transition-all w-full sm:w-auto">
                 Connect Wallet
               </button>
             </div>
@@ -92,7 +92,7 @@ const Dashboard = () => {
     height: "110%", // Kept height at 110%
   }}
 >
-  <div className="bg-[#280046e0] bg-opacity-80 p-10 mx-auto flex items-center justify-center w-full h-full">
+  <div className="bg-blue-950 bg-opacity-80 p-10 mx-auto flex items-center justify-center w-full h-full">
     {/* Content can be added here if needed */}
   </div>
 </div>
@@ -100,8 +100,8 @@ const Dashboard = () => {
         </div>
 
         {/* Announcements Section */}
-        <div className="bg-[#280046e0] p-6 rounded-xl shadow-lg text-center flex flex-col justify-between relative border border-green-400">
-          <h2 className="text-3xl font-semibold tracking-wide text-green-300 mb-4">
+        <div className="bg-blue-950 p-6 rounded-xl shadow-lg text-center flex flex-col justify-between relative border border-green-400">
+          <h2 className="text-3xl font-semibold tracking-wide text-blue-300 mb-4">
             Announcements
           </h2>
           <iframe
@@ -115,41 +115,41 @@ const Dashboard = () => {
       {/* Stats Section */}
       <div className="container mx-auto px-4 py-6 grid grid-cols-1 md:grid-cols-2 gap-6">
         {/* Atropine Stats */}
-        <div className="bg-[#280046e0] p-6 rounded-lg shadow-lg border border-green-400">
-          <h2 className="text-2xl font-bold mb-4 text-green-400">
+        <div className="bg-blue-950 p-6 rounded-lg shadow-lg border border-green-400">
+          <h2 className="text-2xl font-bold mb-4 text-blue-300">
             Atropine Stats
           </h2>
           <ul className="space-y-2 ">
             <li className="flex justify-between">
-              <span className="text-green-400">Market Cap</span>
+              <span className="text-blue-300">Market Cap</span>
               <span>$475,605</span>
             </li>
             <li className="flex justify-between">
-              <span className="text-green-400">Total Liquidity</span>
+              <span className="text-blue-300">Total Liquidity</span>
               <span>$747,994</span>
             </li>
             <li className="flex justify-between">
-              <span className="text-green-400">Total Minted</span>
+              <span className="text-blue-300">Total Minted</span>
               <span>27,555,347,489</span>
             </li>
             <li className="flex justify-between">
-              <span className="text-green-400">Circulating Supply</span>
+              <span className="text-blue-300">Circulating Supply</span>
               <span>24,233,553,850</span>
             </li>
             <li className="flex justify-between">
-              <span className="text-green-400">New PINE/block</span>
+              <span className="text-blue-300">New PINE/block</span>
               <span>13,000</span>
             </li>
           </ul>
         </div>
 
         {/* Total Value Locked Section */}
-        <div className="bg-[#280046e0] p-6 rounded-lg shadow-lg border border-green-400">
-          <h2 className="text-2xl font-bold mb-4 text-green-400">
+        <div className="bg-blue-950 p-6 rounded-lg shadow-lg border border-green-400">
+          <h2 className="text-2xl font-bold mb-4 text-blue-300">
             Total Value Locked (TVL)
           </h2>
           <h3 className="text-4xl font-bold">$788,169</h3>
-          <p className="mt-4 text-green-400">Across all Farms and Pools</p>
+          <p className="mt-4 text-blue-300">Across all Farms and Pools</p>
         </div>
       </div>
     </div>

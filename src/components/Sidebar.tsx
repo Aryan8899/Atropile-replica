@@ -212,7 +212,7 @@ const Sidebar = () => {
 
         {/* Footer Section */}
         <div className="mt-auto">
-          <p className="text-sm text-gray-400 mt-8">Audited by:</p>
+          <p className="text-sm text-black mt-8">Audited by:</p>
           <div className="flex items-center justify-center">
             <img src={pic2} alt="Auditor Logo" className="h-full w-full" />
           </div>
