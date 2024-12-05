@@ -28,6 +28,19 @@
   transition: transform 0.3s ease-in-out;
 }
 
+/* For desktop */
+@media (max-width: 767px) {
+  .mobile-only {
+    /* Add your mobile-specific styles here */
+    position: relative;
+    top: -290px; /* Moves the element 20px upwards */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+
 body {
   background-color: #87CEEB; /* Dark gray background */
   color: #f0f0f0; /* Light gray text color */
@@ -108,6 +121,29 @@ body {
     transform: rotate(360deg);
   }
 }
+
+/* Default - Normal/Desktop Version */
+.default-bg {
+  background-image: url('https://framerusercontent.com/images/PX7OJIh09S4xt8yZNa9dVpjGoE.png'); /* Set your image URL */
+  background-size: cover; /* Ensures the image covers the container */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat; /* Prevents image repetition */
+}
+
+/* Mobile Version */
+@media (max-width: 640px) {
+  .mobile-bg {
+    background-image: url('https://framerusercontent.com/images/PX7OJIh09S4xt8yZNa9dVpjGoE.png'); /* Same image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .hide-image {
+    display: none; /* Hides the image container */
+  }
+}
+
 
 
 
