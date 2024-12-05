@@ -6,8 +6,8 @@ import { useWeb3Modal } from "@web3modal/ethers5/react";
 import { useCallback } from "react";
 
 const Dashboard = () => {
-  const { open, close } = useWeb3Modal();
-  const { open: isModalOpen } = useWeb3ModalState();
+  // const { open, close } = useWeb3Modal();
+  // const { open: isModalOpen } = useWeb3ModalState();
 
   const handleConnect = useCallback(async () => {
     try {
