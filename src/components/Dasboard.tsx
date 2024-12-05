@@ -39,7 +39,7 @@ const Dashboard = () => {
 
         {/* Connect Button - Mobile Specific Styles */}
         <button
-          onClick={handleConnect}
+          
           className="absolute top-2 right-2 bg-blue-400 hover:bg-green-600 text-white px-3 py-1 rounded-lg text-sm sm:text-base sm:px-4 sm:py-2 sm:top-6 sm:right-6"
         >
           Connect
