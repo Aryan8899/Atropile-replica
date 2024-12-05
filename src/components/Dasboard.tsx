@@ -111,7 +111,7 @@ const Dashboard = () => {
         {/* Atropine Stats */}
         <div className="bg-blue-950 p-6 rounded-lg shadow-lg border border-green-400">
           <h2 className="text-2xl font-bold mb-4 text-blue-300">
-            Atropine Stats
+          Sui Trump Farm Stats
           </h2>
           <ul className="space-y-2 ">
             <li className="flex justify-between">
