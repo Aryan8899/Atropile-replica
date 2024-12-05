@@ -3,24 +3,24 @@
 //import { useEffect } from "react";
 //import { useWeb3ModalState } from "@web3modal/ethers5/react";
 //import { useWeb3Modal } from "@web3modal/ethers5/react";
-import { useCallback } from "react";
+//import { useCallback } from "react";
 
 const Dashboard = () => {
   // const { open, close } = useWeb3Modal();
   // const { open: isModalOpen } = useWeb3ModalState();
 
-  const handleConnect = useCallback(async () => {
-    try {
-      console.log("Attempting to open modal...");
+  // const handleConnect = useCallback(async () => {
+  //   try {
+  //     console.log("Attempting to open modal...");
 
-      // Use open() method directly without await
-      open();
+  //     // Use open() method directly without await
+  //     open();
 
-      console.log("Modal should be opening");
-    } catch (error) {
-      console.error("Modal Open Error:", error);
-    }
-  }, [open]);
+  //     console.log("Modal should be opening");
+  //   } catch (error) {
+  //     console.error("Modal Open Error:", error);
+  //   }
+  // }, [open]);
 
   return (
     <div className=" min-h-screen  text-white space-y-4">
