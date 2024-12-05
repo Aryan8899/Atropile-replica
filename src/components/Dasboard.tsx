@@ -1,6 +1,6 @@
-import React from "react";
-import pic1 from "../photos/pic1.png";
-import { useEffect } from "react";
+//import React from "react";
+//import pic1 from "../photos/pic1.png";
+//import { useEffect } from "react";
 import { useWeb3ModalState } from "@web3modal/ethers5/react";
 import { useWeb3Modal } from "@web3modal/ethers5/react";
 import { useCallback } from "react";
