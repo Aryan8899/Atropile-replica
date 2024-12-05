@@ -1,3 +1,5 @@
+//new
+
 //import React from "react";
 //import pic1 from "../photos/pic1.png";
 //import { useEffect } from "react";
