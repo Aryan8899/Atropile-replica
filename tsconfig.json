@@ -2,7 +2,9 @@
   "compilerOptions": {
     "strict": true,
     "esModuleInterop": true,
-    "moduleResolution": "node"
+    "moduleResolution": "node",
+    "noEmit": true,
+    "jsx": "react-jsx"
   },
   "references": [
     { "path": "./tsconfig.app.json" },
