@@ -32,7 +32,7 @@ const Sidebar = () => {
     <div className="flex ">
       {/* Mobile Toggle Button */}
       <button
-        className="lg:hidden fixed top-4 left-4 z-50 p-2 bg-green-500 text-white rounded-full shadow-lg"
+        className="lg:hidden fixed top-4 left-4 z-50 p-2 bg-yellow-500 text-white rounded-full shadow-lg"
         onClick={toggleSidebar}
       >
         {isSidebarOpen ? <FaTimes size={24} /> : <FaBars size={24} />}
@@ -41,7 +41,7 @@ const Sidebar = () => {
       {/* Sidebar */}
       <div
       
-      className={`fixed top-0 left-0 w-64 h-screen bg-gradient-to-b from-cyan-200  to-cyan-950 text-black flex flex-col py-4 px-4 border-r-4 border-green-500 z-40 
+      className={`fixed top-0 left-0 w-64 h-screen bg-gradient-to-b from-cyan-200  to-cyan-950 text-black flex flex-col py-4 px-4 border-r-4 border-yellow-400 z-40 
         transition-transform duration-300 
         ${isSidebarOpen ? "translate-x-0" : "-translate-x-full"} 
         lg:translate-x-0 lg:static overflow-y-auto `}
@@ -224,7 +224,7 @@ const Sidebar = () => {
           />
 
           {/* Price and Social Icons */}
-          <div className="mt-8 border-t border-green-500 pt-4">
+          <div className="mt-8 border-t border-yellow-400 pt-4">
             <div className="flex items-center justify-around">
               <a
                 href="https://dexscreener.com/pulsechain/0x0e4b3d3141608ebc730ee225666fd97c833d553e"

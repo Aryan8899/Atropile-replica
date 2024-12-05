@@ -51,7 +51,7 @@ const Dashboard = () => {
       {/* Main Content */}
       <div className="container mx-auto px-4 py-6 grid grid-cols-1 md:grid-cols-2 gap-6">
         {/* Farming & Staking Section */}
-        <div className="bg-blue-950 p-6 rounded-xl shadow-lg text-center flex flex-col justify-between border border-green-400 h-full relative">
+        <div className="bg-blue-950 p-6 rounded-xl shadow-lg text-center flex flex-col justify-between border border-yellow-400 h-full relative">
   <div className="grid grid-cols-1 sm:grid-cols-2 items-center gap-4">
     {/* Left Side - Text Content */}
     <div className="text-left px-2 relative z-10">
@@ -96,14 +96,15 @@ const Dashboard = () => {
 
 
         {/* Announcements Section */}
-        <div className="bg-blue-950 p-6 rounded-xl shadow-lg text-center flex flex-col justify-between relative border border-green-400">
+        <div className="bg-blue-950 p-6 rounded-xl shadow-lg text-center flex flex-col justify-between relative border border-yellow-400">
           <h2 className="text-3xl font-semibold tracking-wide text-blue-300 mb-4">
             Announcements
           </h2>
           <iframe
-            src="https://dexscreener.com/pulsechain/0x0E4B3d3141608Ebc730EE225666Fd97c833d553E?embed=1&theme=dark&trades=0&info=0"
+            src="https://dexscreener.com/sui/0x2c2bbe5623c66e9ddf39185d3ab5528493c904b89c415df991aeed73c2427aa9?embed=1&theme=dark&trades=0&info=0"
             title="Dex Screener Chart"
             className="w-full h-[400px] rounded-md border border-gray-700"
+            
           ></iframe>
         </div>
       </div>
@@ -111,7 +112,7 @@ const Dashboard = () => {
       {/* Stats Section */}
       <div className="container mx-auto px-4 py-6 grid grid-cols-1 md:grid-cols-2 gap-6">
         {/* Atropine Stats */}
-        <div className="bg-blue-950 p-6 rounded-lg shadow-lg border border-green-400">
+        <div className="bg-blue-950 p-6 rounded-lg shadow-lg border border-yellow-400">
           <h2 className="text-2xl font-bold mb-4 text-blue-300">
           Sui Trump Farm Stats
           </h2>
@@ -140,7 +141,7 @@ const Dashboard = () => {
         </div>
 
         {/* Total Value Locked Section */}
-        <div className="bg-blue-950 p-6 rounded-lg shadow-lg border border-green-400">
+        <div className="bg-blue-950 p-6 rounded-lg shadow-lg border border-yellow-400">
           <h2 className="text-2xl font-bold mb-4 text-blue-300">
             Total Value Locked (TVL)
           </h2>
