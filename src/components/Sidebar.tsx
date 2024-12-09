@@ -41,7 +41,7 @@ const Sidebar = () => {
       {/* Sidebar */}
       <div
       
-      className={`fixed top-0 left-0 w-64 h-screen bg-gradient-to-b from-cyan-200  to-custombackgr text-black flex flex-col py-4 px-4 border-r-4 border-yellow-400 z-40 
+      className={`fixed top-0 left-0 w-64 h-screen bg-custombackgr text-black flex flex-col py-4 px-4 border-r-2 border-yellow-400 z-40 
         transition-transform duration-300 
         ${isSidebarOpen ? "translate-x-0" : "-translate-x-full"} 
         lg:translate-x-0 lg:static overflow-y-auto `}
