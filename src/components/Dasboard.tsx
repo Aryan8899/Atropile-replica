@@ -55,16 +55,16 @@ const Dashboard = () => {
   <div className="grid grid-cols-1 sm:grid-cols-2 items-center gap-4">
     {/* Left Side - Text Content */}
     <div className="text-left px-2 relative z-10">
-      <h2 className="text-3xl font-bold tracking-wider uppercase text-blue-300 mb-4">
+      <h2 className="text-3xl font-dela tracking-wider uppercase text-blue-300 mb-4">
         Farming & Staking
       </h2>
-      <p className="text-lg font-medium text-white mb-1">PINE to Harvest</p>
-      <h3 className="text-4xl md:text-4xl font-bold text-white">0.000</h3>
-      <p className="text-sm text-gray-400">~$0.00</p>
+      <p className="text-lg font-poppins text-white mb-1">PINE to Harvest</p>
+      <h3 className="text-4xl md:text-4xl font-dela text-white">0.000</h3>
+      <p className="text-sm text-gray-400 font-dela">~$0.00</p>
 
-      <p className="text-lg font-medium text-white mt-6 mb-1">PINE in Wallet</p>
-      <h3 className="text-4xl font-bold text-white">0.000</h3>
-      <p className="text-sm text-gray-400">~$0.00</p>
+      <p className="text-lg font-poppins text-white mt-6 mb-1">PINE in Wallet</p>
+      <h3 className="text-4xl font-dela text-white">0.000</h3>
+      <p className="text-sm text-gray-400 font-dela">~$0.00</p>
 
       <button className="bg-blue-500 hover:bg-green-600 text-white px-4 py-2 md:px-8 md:py-3 mt-6 md:mt-8 rounded-md font-semibold transition-all w-full sm:w-auto">
         Connect Wallet
@@ -97,7 +97,7 @@ const Dashboard = () => {
 
         {/* Announcements Section */}
         <div className="bg-blue-950 p-6 rounded-xl shadow-lg text-center flex flex-col justify-between relative border border-yellow-400">
-          <h2 className="text-3xl font-semibold tracking-wide text-blue-300 mb-4">
+          <h2 className="text-3xl font-dela tracking-wide text-blue-300 mb-4">
             Announcements
           </h2>
           <iframe
@@ -113,40 +113,40 @@ const Dashboard = () => {
       <div className="container mx-auto px-4 py-6 grid grid-cols-1 md:grid-cols-2 gap-6">
         {/* Atropine Stats */}
         <div className="bg-blue-950 p-6 rounded-lg shadow-lg border border-yellow-400">
-          <h2 className="text-2xl font-bold mb-4 text-blue-300">
+          <h2 className="text-2xl font-dela mb-4 text-blue-300">
           Sui Trump Farm Stats
           </h2>
           <ul className="space-y-2 ">
             <li className="flex justify-between">
-              <span className="text-blue-300">Market Cap</span>
-              <span>$475,605</span>
+              <span className="text-blue-300 font-poppins">Market Cap</span>
+              <span className="font-dela">$475,605</span>
             </li>
             <li className="flex justify-between">
-              <span className="text-blue-300">Total Liquidity</span>
-              <span>$747,994</span>
+              <span className="text-blue-300 font-poppins">Total Liquidity</span>
+              <span className="font-dela">$747,994</span>
             </li>
             <li className="flex justify-between">
-              <span className="text-blue-300">Total Minted</span>
-              <span>27,555,347,489</span>
+              <span className="text-blue-300 font-poppins">Total Minted</span>
+              <span className="font-dela">27,555,347,489</span>
             </li>
             <li className="flex justify-between">
-              <span className="text-blue-300">Circulating Supply</span>
-              <span>24,233,553,850</span>
+              <span className="text-blue-300 font-poppins">Circulating Supply</span>
+              <span className="font-dela">24,233,553,850</span>
             </li>
             <li className="flex justify-between">
-              <span className="text-blue-300">New PINE/block</span>
-              <span>13,000</span>
+              <span className="text-blue-300 font-poppins">New PINE/block</span>
+              <span className="font-dela">13,000</span>
             </li>
           </ul>
         </div>
 
         {/* Total Value Locked Section */}
         <div className="bg-blue-950 p-6 rounded-lg shadow-lg border border-yellow-400">
-          <h2 className="text-2xl font-bold mb-4 text-blue-300">
+          <h2 className="text-2xl font-dela mb-4 text-blue-300">
             Total Value Locked (TVL)
           </h2>
-          <h3 className="text-4xl font-bold">$788,169</h3>
-          <p className="mt-4 text-blue-300">Across all Farms and Pools</p>
+          <h3 className="text-4xl font-dela">$788,169</h3>
+          <p className="mt-4 text-blue-300 font-poppins">Across all Farms and Pools</p>
         </div>
       </div>
     </div>
