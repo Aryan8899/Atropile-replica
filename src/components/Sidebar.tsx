@@ -1,6 +1,7 @@
- //import React, { useState } from "react";
- import { useState } from "react";
+//import React, { useState } from "react";
+import { useState } from "react";
 import "../App.css";
+import pic1 from "../photos/pic3.png";
 
 import {
   FaHome,
@@ -26,8 +27,6 @@ const Sidebar = () => {
     setIsSidebarOpen(!isSidebarOpen);
   };
 
-  
-
   return (
     <div className="flex ">
       {/* Mobile Toggle Button */}
@@ -40,28 +39,19 @@ const Sidebar = () => {
 
       {/* Sidebar */}
       <div
-      
-      className={`fixed top-0 left-0 w-64 h-screen bg-custombackgr text-black flex flex-col py-4 px-4 border-r-2 border-yellow-400 z-40 
+        className={`fixed top-0 left-0 w-64 h-screen bg-custombackgr text-black flex flex-col py-4 px-4 border-r-2 border-yellow-400 z-40 
         transition-transform duration-300 
         ${isSidebarOpen ? "translate-x-0" : "-translate-x-full"} 
         lg:translate-x-0 lg:static overflow-y-auto `}
-      
-      
       >
         {/* Logo Section */}
-        <div className="flex items-center justify-center mb-5 mt-2 ml-5 ">
+        <div className="flex items-center justify-center mb-5">
   <img
-    src="https://framerusercontent.com/images/PX7OJIh09S4xt8yZNa9dVpjGoE.png"
+    src={pic1}
     alt="trump"
-    className="w-[50px] h-[50px] mr-2"
+    className="w-[300px] sm:w-[500px] h-[150px] sm:h-[120px] object-contain"
   />
-  <h2 className="font-[Dela_Gothic_One], sans-serif text-[30px] outline-text font-normal tracking-normal leading-[1.2em] text-white text-start no-underline">
-    <span>SuiTrump</span>
-  </h2>
 </div>
-
-
-
 
         {/* Navigation Links */}
         <nav className="space-y-2">

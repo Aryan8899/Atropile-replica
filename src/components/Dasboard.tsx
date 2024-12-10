@@ -1,6 +1,7 @@
 //new
 
 //import React from "react";
+import pic1 from "../photos/SuiTrump.png"
 //import pic1 from "../photos/pic1.png";
 //import { useEffect } from "react";
 //import { useWeb3ModalState } from "@web3modal/ethers5/react";
@@ -29,24 +30,26 @@ const Dashboard = () => {
       {/* Header */}
       <div className="rotating-background"></div>
 
-      <header className="flex flex-col items-center px-4 py-6 shadow-md relative">
-        <h2 className="font-[Dela_Gothic_One], sans-serif text-[40px] sm:text-[50px] outline-text font-normal tracking-normal leading-[1.2em] text-white text-start no-underline flex items-center">
-          <span className="mr-4">SuiTrump</span>
-          <img
-            src="https://framerusercontent.com/images/PX7OJIh09S4xt8yZNa9dVpjGoE.png"
-            alt="trump"
-            className="w-[80px] sm:w-[100px] h-[80px] sm:h-[100px]"
-          />
-        </h2>
+      <header className="flex flex-col items-center px-1 py-1 shadow-md relative">
+  <h2 className="font-[Dela_Gothic_One], sans-serif text-[40px] sm:text-[50px] outline-text font-normal tracking-normal leading-[1.2em] text-white flex items-center">
+    <img
+      src={pic1}
+      alt="trump"
+      className="w-[500px] sm:w-[500px] h-[200px] sm:h-[200px] object-contain"
+    />
+  </h2>
 
-        {/* Connect Button - Mobile Specific Styles */}
-        <button
-          
-          className="absolute top-2 right-2 bg-blue-400 hover:bg-green-600 text-white px-3 py-1 rounded-lg text-sm sm:text-base sm:px-4 sm:py-2 sm:top-6 sm:right-6"
-        >
-          Connect
-        </button>
-      </header>
+  {/* Connect Button */}
+  <button
+    className="absolute top-2 right-2 bg-blue-400 hover:bg-green-600 text-white px-3 py-1 rounded-lg text-sm sm:text-base sm:px-4 sm:py-2 sm:top-6 sm:right-6"
+  >
+    Connect
+  </button>
+</header>
+
+
+
+
 
       {/* Main Content */}
       <div className="container mx-auto px-4 py-6 grid grid-cols-1 md:grid-cols-2 gap-6">

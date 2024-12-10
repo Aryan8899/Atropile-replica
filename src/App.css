@@ -8,9 +8,24 @@
 
 @media (min-width: 1024px) { /* Target desktop sizes */
   .hide-scrollbar {
-    overflow: auto; /* Enable scrolling without a visible scrollbar */
+    overflow: hidden; /* Enable scrolling without a visible scrollbar */
   }
 }
+
+
+
+
+
+body {
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+
 
 
 .container {
@@ -19,6 +34,8 @@
 }
 
 .sidebar {
+  overflow: hidden; /* Remove scrollbar */
+
   -webkit-overflow-scrolling: touch;
 }
 
@@ -63,6 +80,7 @@ html::-webkit-scrollbar {
 
 body, html {
   overflow-x: hidden; /* Prevent horizontal scrolling */
+  overflow: hidden; /* Disable scrolling */
   max-width: 100%;
 }
 
