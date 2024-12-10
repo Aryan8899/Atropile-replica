@@ -1,7 +1,7 @@
 //new
 
 //import React from "react";
-import pic1 from "../photos/SuiTrump.png"
+import pic1 from "../photos/pic4.png";
 //import pic1 from "../photos/pic1.png";
 //import { useEffect } from "react";
 //import { useWeb3ModalState } from "@web3modal/ethers5/react";
