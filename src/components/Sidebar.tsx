@@ -2,6 +2,7 @@
 import { useState } from "react";
 import "../App.css";
 import pic1 from "../photos/pic3.png";
+import pic5 from "../photos/pic5.png";
 
 import {
   FaHome,
@@ -217,13 +218,14 @@ const Sidebar = () => {
           <div className="mt-8 border-t border-yellow-400 pt-4">
             <div className="flex items-center justify-around">
               <a
-                href="https://dexscreener.com/pulsechain/0x0e4b3d3141608ebc730ee225666fd97c833d553e"
+                href="https://dexscreener.com/sui/0x2c2bbe5623c66e9ddf39185d3ab5528493c904b89c415df991aeed73c2427aa9"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center space-x-2 text-yellow-500 hover:text-green-400 transition duration-300"
               >
-                <BsFlower2 className="text-2xl" />
-                <p className="text-white text-sm font-bold">$0.000018</p>
+                <img src={pic5} alt="victorylogo0" className="w-10 h-10 object-contain" />
+<p className="text-white text-sm font-bold">$0.000018</p>
+
               </a>
               <a
                 href="https://telegram.org"

@@ -30,14 +30,19 @@ const Dashboard = () => {
       {/* Header */}
       <div className="rotating-background"></div>
 
-      <header className="flex flex-col items-center px-1 py-1 shadow-md relative">
-  <h2 className="font-[Dela_Gothic_One], sans-serif text-[40px] sm:text-[50px] outline-text font-normal tracking-normal leading-[1.2em] text-white flex items-center">
-    <img
-      src={pic1}
-      alt="trump"
-      className="w-[500px] sm:w-[500px] h-[200px] sm:h-[200px] object-contain"
-    />
-  </h2>
+      <header className="flex flex-col items-center px-1 py-1 shadow-md relative ">
+  {/* Logo */}
+  <img
+    src={pic1}
+    alt="trump"
+    className="w-[500px] sm:w-[500px] h-[200px] sm:h-[230px] object-contain  -mt-10"
+  />
+
+<h2 className="font-dela text-[24px] sm:text-[30px] font-normal tracking-normal leading-[1.2em] text-custombackgr text-center -mt-16 [text-shadow:2px_2px_0px_white,-2px_2px_0px_white,2px_-2px_0px_white,-2px_-2px_0px_white]">
+  IT'S ALL <span className="text-yellow-600">ABOUT WINNING</span>
+</h2>
+
+
 
   {/* Connect Button */}
   <button
@@ -46,6 +51,7 @@ const Dashboard = () => {
     Connect
   </button>
 </header>
+
 
 
 
@@ -61,11 +67,11 @@ const Dashboard = () => {
       <h2 className="text-3xl font-dela tracking-wider uppercase text-blue-300 mb-4">
         Farming & Staking
       </h2>
-      <p className="text-lg font-poppins text-white mb-1">PINE to Harvest</p>
+      <p className="text-lg font-poppins text-white mb-1">VICTORY to Harvest</p>
       <h3 className="text-4xl md:text-4xl font-dela text-white">0.000</h3>
       <p className="text-sm text-gray-400 font-dela">~$0.00</p>
 
-      <p className="text-lg font-poppins text-white mt-6 mb-1">PINE in Wallet</p>
+      <p className="text-lg font-poppins text-white mt-6 mb-1">VICTORY in Wallet</p>
       <h3 className="text-4xl font-dela text-white">0.000</h3>
       <p className="text-sm text-gray-400 font-dela">~$0.00</p>
 
@@ -114,7 +120,7 @@ const Dashboard = () => {
 
       {/* Stats Section */}
       <div className="container mx-auto px-4 py-6 grid grid-cols-1 md:grid-cols-2 gap-6">
-        {/* Atropine Stats */}
+        {/* AtroVICTORY Stats */}
         <div className="bg-blue-950 p-6 rounded-lg shadow-lg border border-yellow-400">
           <h2 className="text-2xl font-dela mb-4 text-blue-300">
           Sui Trump Farm Stats
@@ -137,7 +143,7 @@ const Dashboard = () => {
               <span className="font-dela">24,233,553,850</span>
             </li>
             <li className="flex justify-between">
-              <span className="text-blue-300 font-poppins">New PINE/block</span>
+              <span className="text-blue-300 font-poppins">New VICTORY/block</span>
               <span className="font-dela">13,000</span>
             </li>
           </ul>
