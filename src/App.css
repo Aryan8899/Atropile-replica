@@ -46,7 +46,7 @@ body {
 }
 
 /* For desktop */
-@media (max-width: 767px) {
+@media (max-width: 640px) {
   .mobile-only {
     /* Add your mobile-specific styles here */
     position: relative;
