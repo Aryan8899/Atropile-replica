@@ -14,7 +14,7 @@ import {
   FaTimes,
 } from "react-icons/fa";
 import { FaTelegram, FaTwitter } from "react-icons/fa";
-import { BsFlower2 } from "react-icons/bs";
+
 import pic2 from "../photos/pic2.png";
 
 const Sidebar = () => {
