@@ -30,27 +30,29 @@ const Dashboard = () => {
       {/* Header */}
       <div className="rotating-background"></div>
 
-      <header className="flex flex-col items-center px-1 py-1 shadow-md relative ">
+      <header className="flex flex-col items-center px-2 py-2 shadow-md relative">
   {/* Logo */}
   <img
     src={pic1}
     alt="trump"
-    className="w-[500px] sm:w-[500px] h-[200px] sm:h-[230px] object-contain  -mt-10"
+    className="w-[300px] sm:w-[500px] h-[150px] sm:h-[230px] object-contain -mt-6 sm:-mt-10"
   />
 
-<h2 className="font-dela text-[24px] sm:text-[30px] font-normal tracking-normal leading-[1.2em] text-custombackgr text-center -mt-16 [text-shadow:2px_2px_0px_white,-2px_2px_0px_white,2px_-2px_0px_white,-2px_-2px_0px_white]">
-  IT'S ALL <span className="text-yellow-600">ABOUT WINNING</span>
-</h2>
-
-
+  <h2
+    className="font-dela text-[18px] sm:text-[30px] font-normal tracking-normal leading-[1.2em] text-custombackgr text-center -mt-10 sm:-mt-16 [text-shadow:2px_2px_0px_white,-2px_2px_0px_white,2px_-2px_0px_white,-2px_-2px_0px_white] whitespace-nowrap"
+  >
+    IT'S ALL ABOUT WINNING
+  </h2>
 
   {/* Connect Button */}
   <button
-    className="absolute top-2 right-2 bg-blue-400 hover:bg-green-600 text-white px-3 py-1 rounded-lg text-sm sm:text-base sm:px-4 sm:py-2 sm:top-6 sm:right-6"
+    className="absolute top-2 right-2 bg-blue-400 hover:bg-green-600 text-white px-3 py-1 rounded-lg text-xs sm:text-base sm:px-4 sm:py-2 sm:top-6 sm:right-6"
   >
     Connect
   </button>
 </header>
+
+
 
 
 
