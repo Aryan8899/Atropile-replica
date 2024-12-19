@@ -11,6 +11,8 @@
     "esModuleInterop": true,
     "skipLibCheck": true,
     "strict": true,
-    "resolveJsonModule": true
+    "resolveJsonModule": true,
+    "composite": true,  // Required for project references
+    "declaration": true // Ensures .d.ts files are generated
   }
 }

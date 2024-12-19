@@ -9,7 +9,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { Autoplay } from "swiper/modules";
-import { Navigation, Pagination } from "swiper/modules";
+import { Pagination } from "swiper/modules";
 //import pic1 from "../photos/pic1.png";
 //import { useEffect } from "react";
 //import { useWeb3ModalState } from "@web3modal/ethers5/react";
