@@ -1,5 +1,7 @@
 import Sidebar from "./components/Sidebar";
 import Header from "./components/Dasboard";
+//import 'swiper/swiper-bundle.min.css';  // Correct import for the styles
+
 
 const App = () => {
   return (
