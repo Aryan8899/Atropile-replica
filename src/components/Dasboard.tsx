@@ -8,7 +8,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-import { Autoplay} from "swiper/modules";
+import { Autoplay } from "swiper/modules";
 import { Navigation, Pagination } from "swiper/modules";
 //import pic1 from "../photos/pic1.png";
 //import { useEffect } from "react";
@@ -155,41 +155,41 @@ const Dashboard = () => {
 
         {/* Total Value Locked Section */}
         <div className="bg-blue-950 p-6 rounded-lg shadow-lg border border-yellow-400">
-      <h2 className="font-dela mb-4 text-blue-300 text-2xl text-center">
-        Twitter Feed
-      </h2>
-      
-      {/* Swiper Slider */}
-      {/* Swiper Slider */}
-      <Swiper
-        autoplay={{
-          delay: 3000, // 5 seconds delay
-          disableOnInteraction: false, // Autoplay continues after user interaction
-        }}
-        pagination={{ clickable: true }}
-        loop={true} // Enables infinite loop
-        modules={[Autoplay, Pagination]} // Import Autoplay & Pagination modules
-        className="mySwiper"
-      >
-        <SwiperSlide>
-          <div className="tweet-container ">
-            <Tweet id="1868928300820971833" />
-          </div>
-        </SwiperSlide>
+          <h2 className="font-dela mb-4 text-blue-300 text-2xl text-center">
+            Twitter Feed
+          </h2>
 
-        <SwiperSlide>
-          <div className="tweet-container ">
-            <Tweet id="1868583559826747720" />
-          </div>
-        </SwiperSlide>
+          {/* Swiper Slider */}
+          {/* Swiper Slider */}
+          <Swiper
+            autoplay={{
+              delay: 3000, // 5 seconds delay
+              disableOnInteraction: false, // Autoplay continues after user interaction
+            }}
+            pagination={{ clickable: true }}
+            loop={true} // Enables infinite loop
+            modules={[Autoplay, Pagination]} // Import Autoplay & Pagination modules
+            className="mySwiper"
+          >
+            <SwiperSlide>
+              <div className="tweet-container ">
+                <Tweet id="1868928300820971833" />
+              </div>
+            </SwiperSlide>
 
-        <SwiperSlide>
-          <div className="tweet-container">
-            <Tweet id="1868101777171923259" />
-          </div>
-        </SwiperSlide>
-      </Swiper>
-    </div>
+            <SwiperSlide>
+              <div className="tweet-container ">
+                <Tweet id="1868583559826747720" />
+              </div>
+            </SwiperSlide>
+
+            <SwiperSlide>
+              <div className="tweet-container">
+                <Tweet id="1868101777171923259" />
+              </div>
+            </SwiperSlide>
+          </Swiper>
+        </div>
       </div>
     </div>
   );
