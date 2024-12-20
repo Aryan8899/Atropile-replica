@@ -5,7 +5,7 @@
 import "../App.css";
 import { Tweet } from "react-tweet";
 import { Swiper, SwiperSlide } from "swiper/react";
-import '../swiper-bundle.min.css'; // Swiper styles
+//import '../swiper-bundle.min.css'; // Swiper styles
 //import 'swiper/swiper.min.css'; // Additional styles for Swiper
 import { Autoplay } from "swiper/modules";
 import { Pagination } from "swiper/modules";
