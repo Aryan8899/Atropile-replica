@@ -1,8 +1,8 @@
 //import React, { useState } from "react";
 import { useState } from "react";
 import "../App.css";
-import pic1 from "../photos/pic3.png";
-import pic5 from "../photos/pic5.png";
+// import pic3 from "../photos/pic3.png";
+// import pic5 from "../photos/pic5.png";
 
 import {
   FaHome,
@@ -15,7 +15,7 @@ import {
 } from "react-icons/fa";
 import { FaTelegram, FaTwitter } from "react-icons/fa";
 
-import pic2 from "../photos/pic2.png";
+// import pic2 from "../photos/pic2.png";
 
 const Sidebar = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false); // Toggle for sidebar visibility
@@ -48,7 +48,7 @@ const Sidebar = () => {
         {/* Logo Section */}
         <div className="flex items-center justify-center mb-5">
   <img
-    src={pic1}
+    src="/photos/pic3.png"
     alt="trump"
     className="w-[300px] sm:w-[500px] h-[150px] sm:h-[120px] object-contain"
   />
@@ -206,7 +206,7 @@ const Sidebar = () => {
         <div className="mt-auto">
           <p className="text-sm text-black mt-8">Audited by:</p>
           <div className="flex items-center justify-center">
-            <img src={pic2} alt="Auditor Logo" className="h-full w-full" />
+            <img src="/photos/pic2.png" alt="Auditor Logo" className="h-full w-full" />
           </div>
           <img
             src="https://atropine.io/static/media/tech-rate.5f5b2d0902dbdef96856.png"
@@ -223,7 +223,7 @@ const Sidebar = () => {
                 rel="noopener noreferrer"
                 className="flex items-center space-x-2 text-yellow-500 hover:text-green-400 transition duration-300"
               >
-                <img src={pic5} alt="victorylogo0" className="w-10 h-10 object-contain" />
+                <img src="/photos/pic5.png" alt="victorylogo0" className="w-10 h-10 object-contain" />
 <p className="text-white text-sm font-bold">$0.000018</p>
 
               </a>

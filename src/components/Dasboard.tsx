@@ -1,7 +1,7 @@
 //neww
 
 //import React from "react";
-import pic1 from "../photos/pic4.png";
+//import pic1 from "../photos/pic4.png";
 import "../App.css";
 import { Tweet } from "react-tweet";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -40,7 +40,7 @@ const Dashboard = () => {
       <header className="flex flex-col items-center px-2 py-2 shadow-md relative">
         {/* Logo */}
         <img
-          src={pic1}
+          src="/photos/pic4.png"
           alt="trump"
           className="w-[300px] sm:w-[500px] h-[150px] sm:h-[230px] object-contain -mt-6 sm:-mt-10"
         />
