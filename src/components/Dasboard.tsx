@@ -1,4 +1,4 @@
-//new
+//neww
 
 //import React from "react";
 import pic1 from "../photos/pic4.png";
